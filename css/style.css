@@ -107,8 +107,6 @@ main {
 }
 
 main .first-section {
-    border-top: 1px dotted var(--clr-white);
-    border-bottom: 1px dotted var(--clr-white);
     
     width: 100%;
     padding: 2rem 0;
@@ -205,6 +203,10 @@ main .second-section {
     height: 20rem;
 }
 
+.video-container {
+    border-radius: 50%;
+}
+
 @media only screen and (min-width: 768px) {
     header .container {
         justify-content: end;
@@ -255,6 +257,6 @@ main .second-section {
 
 @media only screen and (min-width: 1280px) {
     nav .button-link {
-        width: 16rem;
+        width: 10rem;
     }
 }
