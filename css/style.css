@@ -118,6 +118,7 @@ main .first-section {
 
 .first-section .article {
     width: 100%;
+    height: 100%;
     padding: 1rem;
 
     display: flex;
@@ -129,11 +130,14 @@ h1 {
     color: var(--clr-yellow);
     text-align: center;
     font-weight: 500;
+    font-size: 5rem;
 }
 
 p {
     color: var(--clr-white);
     line-height: 2;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .link-key {
