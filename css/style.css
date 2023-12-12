@@ -221,6 +221,33 @@ main .second-section {
     justify-content: center;
 }
 
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    text-align: center;
+}
+
+.reg-btn {
+    background-color: var(--clr-yellow);
+    border-radius: 0.8rem;
+
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    text-align: center;
+
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+.reg-btn:hover {
+    opacity: 80%;
+}
+
 /** snowman **/
 .snowman-float-container {
     position: fixed;
