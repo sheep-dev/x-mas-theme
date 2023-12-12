@@ -14,7 +14,6 @@ body, html {
     margin: 0;
     padding: 0;
 
-    background-color: var(--clr-black);
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
 
@@ -23,6 +22,18 @@ body, html {
 
 .container {
     max-width: 1280px;
+}
+
+.bg-backgound {
+    background-image: url(/img/BACKGROUND.jpg); 
+    width: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+    position: fixed;
+    inset: 0;
 }
 
 /** header **/
@@ -104,6 +115,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    position: absolute;
 }
 
 main .first-section {
@@ -126,17 +139,29 @@ main .first-section {
     gap: 1.5rem;
 }
 
+.article .jili-wrapper {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jili-wrapper .jili-container {
+    height: 20rem;
+}
+
 h1 {
     color: var(--clr-yellow);
     text-align: center;
     font-weight: 500;
-    font-size: 5rem;
+    font-size: 2.3rem;
 }
 
 p {
     color: var(--clr-white);
     line-height: 2;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -227,6 +252,18 @@ main .second-section {
     nav .button-link {
         width: 15rem;
     }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .jili-wrapper .jili-container {
+        height: 30rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -257,10 +294,49 @@ main .second-section {
     .menu-container .menu-btn {
         display: none;
     }
+
+    main {
+        padding: 0 5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .jili-wrapper .jili-container {
+        height: 25rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
     nav .button-link {
         width: 10rem;
+    }
+
+    main {
+        padding: 0 5rem;
+    }
+
+    .jili-wrapper .jili-container {
+        height: 30rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    main {
+        padding: 0 5rem;
+        height: 100vh;
     }
 }
